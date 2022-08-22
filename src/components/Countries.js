@@ -11,7 +11,9 @@ const Countries = () => {
     return (
         <div className='countries'>
             <h1>COUNTRIES</h1>
-            <ul>{data.map((country) => <li>{country.translations.fra.commons}</li>)}
+            <ul>{data.map((country, index) => (
+            <li key={index}>{country.translations.fra.common}</li>
+            ))}
             </ul>
         </div>
     );
