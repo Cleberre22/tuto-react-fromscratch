@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function UncontrolledExample() {
   return (
-    <Carousel className='w-50'>
+    <Carousel className='w-100'>
       <Carousel.Item>
         <img
           className="d-block w-100"

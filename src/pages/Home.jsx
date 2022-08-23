@@ -4,6 +4,9 @@ import Menu from "../components/Menu";
 import CarouBoot from "../components/CarouBoot";
 import Logo from "../components/Logo";
 import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Home = () => {
   return (
@@ -50,16 +53,18 @@ const Home = () => {
         </div>
       </div>
 
-<div className="container my-5 d-flex zoneTest">
-    <div className="justify-content-center">
-        <CarouBoot />
-        <div>
-            <h4>azerty</h4>
-            <p>azertyuio esqytjikt  yurui</p>
-        </div>
-    </div>
-</div>
+      <Container>
+        <row>
+          <Col sm={6}>
+            <CarouBoot />
+          </Col>
 
+          <Col sm={6}>
+            <h4>azerty</h4>
+            <p>ae rtrz te a t za ta tr azer</p>
+          </Col>
+        </row>
+      </Container>
     </div>
   );
 };
